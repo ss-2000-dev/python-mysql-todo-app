@@ -1,5 +1,5 @@
 # 環境変数にFLASK_APPを設定
-$env:FLASK_APP = "app.py"
+$env:FLASK_APP = "setup.py"
 
 # データベースの初期化
 python -m flask db init
@@ -14,4 +14,4 @@ python -m flask db migrate -m 'db start'
 python -m flask db upgrade
 
 # Flaskアプリケーションを起動
-python app.py
+python setup.py
